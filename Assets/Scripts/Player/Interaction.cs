@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ObjectInteraction : MonoBehaviour 
+public class Interaction : MonoBehaviour 
 {
 
     private GameObject col;
@@ -25,7 +25,10 @@ public class ObjectInteraction : MonoBehaviour
                 if (GrabAble())
                 {
                     Debug.Log("True");
-                    Destroy(col.gameObject);
+                    //Destroy(col.gameObject);
+                    //objRespawner.Respawn(col.gameObject);
+                    ObjBehaviour _objBehaviour = col.GetComponent<ObjBehaviour>();
+                    _objBehaviour.OnInteraction();
                 }
                 Debug.Log("False");
             }
