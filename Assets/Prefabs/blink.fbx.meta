@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: e6eac7de2adfa854b8ed6ddf0ec987e1
+timeCreated: 1431330885
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: b1
+    100002: b2
+    100004: b3
+    100006: b4
+    100008: b5
+    100010: //RootNode
+    100012: brow_L
+    100014: brow_R
+    100016: cheeck_L
+    100018: cheeck_R
+    100020: chin
+    100022: corn_L
+    100024: corn_R
+    100026: EYE_LEFT
+    100028: EYE_RIGHT
+    100030: l1
+    100032: l2
+    100034: l3
+    100036: l4
+    100038: l5
+    100040: LIP_LOWER
+    100042: LIP_UPPER
+    100044: LIPS
+    100046: lower_corner
+    100048: lower_lip
+    100050: lowerlip
+    100052: NOSE
+    100054: Skin
+    100056: Skin_2
+    100058: SKULL
+    100060: upper_corner
+    100062: upper_lip
+    100064: upperlip
+    400000: b1
+    400002: b2
+    400004: b3
+    400006: b4
+    400008: b5
+    400010: //RootNode
+    400012: brow_L
+    400014: brow_R
+    400016: cheeck_L
+    400018: cheeck_R
+    400020: chin
+    400022: corn_L
+    400024: corn_R
+    400026: EYE_LEFT
+    400028: EYE_RIGHT
+    400030: l1
+    400032: l2
+    400034: l3
+    400036: l4
+    400038: l5
+    400040: LIP_LOWER
+    400042: LIP_UPPER
+    400044: LIPS
+    400046: lower_corner
+    400048: lower_lip
+    400050: lowerlip
+    400052: NOSE
+    400054: Skin
+    400056: Skin_2
+    400058: SKULL
+    400060: upper_corner
+    400062: upper_lip
+    400064: upperlip
+    2300000: brow_L
+    2300002: brow_R
+    2300004: cheeck_L
+    2300006: cheeck_R
+    2300008: chin
+    2300010: corn_L
+    2300012: corn_R
+    2300014: EYE_LEFT
+    2300016: EYE_RIGHT
+    2300018: NOSE
+    2300020: SKULL
+    3300000: brow_L
+    3300002: brow_R
+    3300004: cheeck_L
+    3300006: cheeck_R
+    3300008: chin
+    3300010: corn_L
+    3300012: corn_R
+    3300014: EYE_LEFT
+    3300016: EYE_RIGHT
+    3300018: NOSE
+    3300020: SKULL
+    4300000: SKULL
+    4300002: upperlip
+    4300004: lowerlip
+    4300006: EYE_LEFT
+    4300008: EYE_RIGHT
+    4300010: chin
+    4300012: cheeck_R
+    4300014: cheeck_L
+    4300016: corn_R
+    4300018: corn_L
+    4300020: NOSE
+    4300022: brow_R
+    4300024: brow_L
+    7400000: C4D Animation Take
+    9500000: //RootNode
+    13700000: lowerlip
+    13700002: upperlip
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
