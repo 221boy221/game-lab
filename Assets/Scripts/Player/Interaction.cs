@@ -25,14 +25,13 @@ public class Interaction : MonoBehaviour
                 if (GrabAble())
                 {
                     Debug.Log("True");
-                    //Destroy(col.gameObject);
-                    //objRespawner.Respawn(col.gameObject);
                     ObjBehaviour _objBehaviour = col.GetComponent<ObjBehaviour>();
                     _objBehaviour.OnInteraction();
                 }
                 Debug.Log("False");
             }
         }
+        
     }
 
     // Is the player aiming at the so called Object?

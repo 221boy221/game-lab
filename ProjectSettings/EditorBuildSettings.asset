@@ -4,4 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_Scenes/MainMenu.unity
+  - enabled: 1
+    path: Assets/_Scenes/Collin/Maze.unity
+  - enabled: 1
+    path: Assets/_Scenes/Rob/BlinkGame.unity
+  - enabled: 1
+    path: Assets/_Scenes/Boy/FindTheObject.unity
