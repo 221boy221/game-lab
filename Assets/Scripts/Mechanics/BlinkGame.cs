@@ -25,7 +25,6 @@ public class BlinkGame : MonoBehaviour
 
 		if(_pcWin == false)
 		{
-			_anim.SetTrigger ("Blink");
 			_playerWin = true;
 			WinOrLose();
 		}
@@ -33,10 +32,18 @@ public class BlinkGame : MonoBehaviour
 
 	void Update ()
 	{
-		_playRandomAnim = Random.Range (1,10);
+		_playRandomAnim = Random.Range (1,10000);
 		if(_playRandomAnim == 1)
 		{
-			_anim.SetTrigger ("Blink");
+			_anim.SetTrigger ("Squint");
+		}
+		else if(_playRandomAnim == 2)
+		{
+			_anim.SetTrigger ("Frown");
+		}
+		else if(_playRandomAnim == 3)
+		{
+			_anim.SetTrigger ("Smile");
 		}
 	}
 
@@ -46,11 +53,13 @@ public class BlinkGame : MonoBehaviour
 
 		if(_pcWin == true)
 		{
-			_winOrLoseText.text = "YOU WIN!";
+			_anim.SetTrigger ("Smile");
+			_winOrLoseText.text = "YOU LOSE!";
 		}
 		else if(_playerWin == true)
 		{
-			_winOrLoseText.text = "YOU LOSE!";
+			_anim.SetTrigger ("Blink");
+			_winOrLoseText.text = "YOU WIN!";
 		}
 	}
 
