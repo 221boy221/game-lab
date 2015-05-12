@@ -7,6 +7,7 @@ public class BlinkGame : MonoBehaviour
 	[SerializeField]private Animator _anim;
 	[SerializeField]private GameObject _restartButton;
 	[SerializeField]private Text _winOrLoseText;
+	private TGCConnectionController _controller;
 	private float _waitTime;
 	private float _playRandomAnim;
 	private bool _playerWin;
@@ -17,6 +18,22 @@ public class BlinkGame : MonoBehaviour
 	{
 		_waitTime = Random.Range (15,90);
 		StartCoroutine (Blink());
+	}
+
+	void Start ()
+	{
+		_controller = GameObject.Find("NeuroSkyTGCController").GetComponent<TGCConnectionController>();
+
+		_controller.UpdateBlinkEvent += OnBlink;
+	}
+
+	void OnBlink (int value)
+	{
+		if(value > 50 && _playerWin == false)
+		{
+			_pcWin = true;
+			WinOrLose();
+		}
 	}
 
 	IEnumerator Blink () 
@@ -32,18 +49,22 @@ public class BlinkGame : MonoBehaviour
 
 	void Update ()
 	{
-		_playRandomAnim = Random.Range (1,10000);
-		if(_playRandomAnim == 1)
+		_playRandomAnim = Random.Range (1,1000);
+
+		if(_pcWin == false && _playerWin == false)
 		{
-			_anim.SetTrigger ("Squint");
-		}
-		else if(_playRandomAnim == 2)
-		{
-			_anim.SetTrigger ("Frown");
-		}
-		else if(_playRandomAnim == 3)
-		{
-			_anim.SetTrigger ("Smile");
+			if(_playRandomAnim == 1)
+			{
+				_anim.SetTrigger ("Squint");
+			}
+			else if(_playRandomAnim == 2)
+			{
+				_anim.SetTrigger ("Frown");
+			}
+			else if(_playRandomAnim == 3)
+			{
+				_anim.SetTrigger ("Smile");
+			}
 		}
 	}
 
@@ -62,12 +83,7 @@ public class BlinkGame : MonoBehaviour
 			_winOrLoseText.text = "YOU WIN!";
 		}
 	}
-
-	public void RestartButton ()
-	{
-		Application.LoadLevel (Application.loadedLevel);
-	}
-
+	
 	public void Button ()
 	{
 		if(_playerWin == false)
