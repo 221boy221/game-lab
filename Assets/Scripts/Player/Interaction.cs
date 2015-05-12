@@ -31,7 +31,6 @@ public class Interaction : MonoBehaviour
                 Debug.Log("False");
             }
         }
-        
     }
 
     // Is the player aiming at the so called Object?
