@@ -83,13 +83,4 @@ public class BlinkGame : MonoBehaviour
 			_winOrLoseText.text = "YOU WIN!";
 		}
 	}
-	
-	public void Button ()
-	{
-		if(_playerWin == false)
-		{
-			_pcWin = true;
-			WinOrLose();
-		}
-	}
 }
