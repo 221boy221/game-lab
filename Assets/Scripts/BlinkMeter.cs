@@ -16,7 +16,8 @@ public class BlinkMeter : MonoBehaviour
 
     void OnBlink(int value) 
     {
-        if (value > 50) 
+        Debug.Log(value);
+        if (value > 20) 
         {
             _objRespawner.Respawn(null);
         }

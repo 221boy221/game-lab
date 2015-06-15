@@ -29,7 +29,7 @@ public class BlinkGame : MonoBehaviour
 
 	void OnBlink (int value)
 	{
-		if(value > 50 && _playerWin == false)
+		if(value > 20 && _playerWin == false)
 		{
 			_pcWin = true;
 			WinOrLose();
